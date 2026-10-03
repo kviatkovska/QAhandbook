@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QA Handbook - Навчальний довідник для тестувальників</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -12,21 +13,21 @@
             <h1>📚 QA Handbook</h1>
             <p>Навчальний довідник для тестувальників</p>
         </header>
-        
+
         <main>
             <div class="intro">
                 <h2>Що це?</h2>
-                <p>Неофіційний конспект із теорії тестування за структурою <strong>ISTQB Foundation (CTFL v4.0)</strong>, клієнт-серверної архітектури, API testing та підготовки до協бесід. Проєкт не пов'язаний з ISTQB®.</p>
+                <p>Неофіційний конспект із теорії тестування за структурою <strong>ISTQB Foundation (CTFL v4.0)</strong>, клієнт-серверної архітектури, API testing та підготовки до співбесіди. Проєкт не пов'язаний з ISTQB®.</p>
             </div>
-            
+
             <div class="warning">
                 <strong>⚠️ Застереження:</strong> Це неофіційні конспекти, написані власними словами. Проєкт не пов'язаний з ISTQB®. ISTQB® є зареєстрованою торговельною маркою.
             </div>
-            
+
             <h2>Виберіть ваш рівень</h2>
-            
+
             <div class="levels-grid">
-                <div class="level-card junior">
+                <div class="level-card junior" tabindex="0">
                     <h3 class="level-title junior">👶 Junior</h3>
                     <p class="level-subtitle">0–1.5 року досвіду</p>
                     <p class="level-description">Розуміння термінів, основи тестування, перші кроки з автоматизацією API.</p>
@@ -37,8 +38,8 @@
                         <a href="qa-handbook/01-junior/interview.md">💬 Співбесіда: Типові питання</a>
                     </div>
                 </div>
-                
-                <div class="level-card middle">
+
+                <div class="level-card middle" tabindex="0">
                     <h3 class="level-title middle">👨‍💼 Middle</h3>
                     <p class="level-subtitle">1.5–4 роки досвіду</p>
                     <p class="level-description">Застосування технік, самостійне проєктування, автоматизація, CI/CD.</p>
@@ -49,8 +50,8 @@
                         <a href="qa-handbook/02-middle/interview.md">💬 Співбесіда: Архітектура & розробка</a>
                     </div>
                 </div>
-                
-                <div class="level-card senior">
+
+                <div class="level-card senior" tabindex="0">
                     <h3 class="level-title senior">👨‍🎓 Senior</h3>
                     <p class="level-subtitle">4+ років досвіду</p>
                     <p class="level-description">Стратегія, управління, архітектурне мислення, менторство.</p>
@@ -62,17 +63,17 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="how-to-use">
                 <h2>📝 Як користуватися</h2>
                 <ol>
-                    <li><strong>Йдіть за рівнем:</strong> Спершу закрийте Junior повністю, потім переходьте до Middle. Senior читайте, коли вже маєте практичного досвіду.</li>
-                    <li><strong>Чотири файли на рівень:</strong> Кожен рівень містить ISTQB-теорію, клієнт-серверну архітектуру, API testing і питання для співбесіди.</li>
-                    <li><strong>Вправи & практика:</strong> Після кожного файлу виконайте практичні завдання на публічних API чи власному застосунку.</li>
-                    <li><strong>Незнайомі терміни?</strong> Дивіться в <a href="qa-handbook/glossary.md">глосарії</a>.</li>
+                    <li><strong>Йдіть за рівнем:</strong> спершу закрийте Junior повністю, потім переходьте до Middle. Senior читайте, коли вже маєте практичний досвід.</li>
+                    <li><strong>Чотири файли на рівень:</strong> кожен рівень містить ISTQB-теорію, клієнт-серверну архітектуру, API testing і питання для співбесіди.</li>
+                    <li><strong>Вправи & практика:</strong> після кожного файлу виконайте практичні завдання на публічних API чи власному застосунку.</li>
+                    <li><strong>Незнайомі терміни?</strong> дивіться в <a href="qa-handbook/glossary.md">глосарії</a>.</li>
                 </ol>
             </div>
-            
+
             <div class="what-to-expect">
                 <h2>🎯 Що очікується на кожному рівні</h2>
                 <table class="expectations-table">
@@ -112,7 +113,7 @@
                     </tbody>
                 </table>
             </div>
-            
+
             <div class="learning-path">
                 <h3>⏱️ Орієнтовний шлях навчання</h3>
                 <ul>
@@ -121,7 +122,7 @@
                     <li><strong>Далі (Senior):</strong> стратегія, метрики, архітектурне мислення, менторство.</li>
                 </ul>
             </div>
-            
+
             <div class="additional-links">
                 <h3>🔗 Додаткові ресурси</h3>
                 <a href="qa-handbook/glossary.md">📚 Глосарій термінів</a>
@@ -129,9 +130,9 @@
                 <a href="https://github.com/kviatkovska/QAhandbook/issues">💬 Запитання & обговорення</a>
             </div>
         </main>
-        
+
         <footer>
-            <p>QA Handbook • Неофіційний навчальний матеріал • <a href="https://github.com/kviatkovska/QAhandbook">GitHub</a></p>
+            <p>QA Handbook • Неофіційний навчальний матеріал • © <span id="current-year">2026</span> • <a href="https://github.com/kviatkovska/QAhandbook">GitHub</a></p>
         </footer>
     </div>
 </body>
