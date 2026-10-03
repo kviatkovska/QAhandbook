@@ -4,263 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QA Handbook - Навчальний довідник для тестувальників</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-        
-        header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 60px 40px;
-            text-align: center;
-        }
-        
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        
-        header p {
-            font-size: 1.1em;
-            opacity: 0.9;
-        }
-        
-        .content {
-            padding: 40px;
-        }
-        
-        .intro {
-            background: #f8f9fa;
-            padding: 20px;
-            border-left: 4px solid #667eea;
-            margin-bottom: 30px;
-            border-radius: 5px;
-        }
-        
-        .intro h2 {
-            color: #667eea;
-            margin-bottom: 10px;
-        }
-        
-        .levels-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 40px 0;
-        }
-        
-        .level-card {
-            border: 2px solid #e9ecef;
-            border-radius: 8px;
-            padding: 30px;
-            transition: all 0.3s ease;
-            background: #f8f9fa;
-        }
-        
-        .level-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            border-color: #667eea;
-        }
-        
-        .level-card.junior {
-            border-top: 4px solid #28a745;
-        }
-        
-        .level-card.middle {
-            border-top: 4px solid #ffc107;
-        }
-        
-        .level-card.senior {
-            border-top: 4px solid #dc3545;
-        }
-        
-        .level-title {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-        
-        .level-title.junior {
-            color: #28a745;
-        }
-        
-        .level-title.middle {
-            color: #ffc107;
-        }
-        
-        .level-title.senior {
-            color: #dc3545;
-        }
-        
-        .level-subtitle {
-            color: #666;
-            font-size: 0.95em;
-            margin-bottom: 15px;
-        }
-        
-        .level-links {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        
-        .level-links a {
-            display: block;
-            padding: 10px 15px;
-            background: white;
-            border: 1px solid #e9ecef;
-            border-radius: 5px;
-            text-decoration: none;
-            color: #667eea;
-            transition: all 0.3s ease;
-            font-size: 0.95em;
-        }
-        
-        .level-links a:hover {
-            background: #667eea;
-            color: white;
-            border-color: #667eea;
-        }
-        
-        .how-to-use {
-            background: #f0f4ff;
-            padding: 30px;
-            border-radius: 8px;
-            margin: 40px 0;
-        }
-        
-        .how-to-use h2 {
-            color: #667eea;
-            margin-bottom: 20px;
-        }
-        
-        .how-to-use ol {
-            padding-left: 20px;
-        }
-        
-        .how-to-use li {
-            margin-bottom: 15px;
-            color: #555;
-        }
-        
-        .what-to-expect {
-            margin: 40px 0;
-        }
-        
-        .what-to-expect h2 {
-            color: #667eea;
-            margin-bottom: 20px;
-        }
-        
-        .expectations-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        
-        .expectations-table th,
-        .expectations-table td {
-            padding: 15px;
-            text-align: left;
-            border-bottom: 1px solid #e9ecef;
-        }
-        
-        .expectations-table th {
-            background: #667eea;
-            color: white;
-            font-weight: 600;
-        }
-        
-        .expectations-table tr:hover {
-            background: #f8f9fa;
-        }
-        
-        .warning {
-            background: #fff3cd;
-            border: 1px solid #ffc107;
-            border-left: 4px solid #ffc107;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-        
-        .warning strong {
-            color: #856404;
-        }
-        
-        .additional-links {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 30px 0;
-        }
-        
-        .additional-links h3 {
-            color: #667eea;
-            margin-bottom: 15px;
-        }
-        
-        .additional-links a {
-            display: inline-block;
-            margin-right: 15px;
-            margin-bottom: 10px;
-            padding: 8px 15px;
-            background: #667eea;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-        
-        .additional-links a:hover {
-            background: #764ba2;
-        }
-        
-        footer {
-            background: #f8f9fa;
-            padding: 20px 40px;
-            border-top: 1px solid #e9ecef;
-            text-align: center;
-            color: #666;
-            font-size: 0.9em;
-        }
-        
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.8em;
-            }
-            
-            .content {
-                padding: 20px;
-            }
-            
-            .levels-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -269,23 +13,23 @@
             <p>Навчальний довідник для тестувальників</p>
         </header>
         
-        <div class="content">
+        <main>
             <div class="intro">
                 <h2>Що це?</h2>
-                <p>Неофіційний конспект із теорії тестування за структурою <strong>ISTQB Foundation (CTFL v4.0)</strong>, клієнт-серверної архітектури, API testing та підготовки до співбесід. Проєкт не пов'язаний з ISTQB®.</p>
+                <p>Неофіційний конспект із теорії тестування за структурою <strong>ISTQB Foundation (CTFL v4.0)</strong>, клієнт-серверної архітектури, API testing та підготовки до協бесід. Проєкт не пов'язаний з ISTQB®.</p>
             </div>
             
             <div class="warning">
                 <strong>⚠️ Застереження:</strong> Це неофіційні конспекти, написані власними словами. Проєкт не пов'язаний з ISTQB®. ISTQB® є зареєстрованою торговельною маркою.
             </div>
             
-            <h2 style="color: #667eea; margin-bottom: 20px;">Виберіть ваш рівень</h2>
+            <h2>Виберіть ваш рівень</h2>
             
             <div class="levels-grid">
                 <div class="level-card junior">
                     <h3 class="level-title junior">👶 Junior</h3>
                     <p class="level-subtitle">0–1.5 року досвіду</p>
-                    <p style="margin-bottom: 15px; color: #666; font-size: 0.95em;">Розуміння термінів, основи тестування, перші кроки з автоматизацією API.</p>
+                    <p class="level-description">Розуміння термінів, основи тестування, перші кроки з автоматизацією API.</p>
                     <div class="level-links">
                         <a href="qa-handbook/01-junior/istqb.md">📖 ISTQB: Основи й терміни</a>
                         <a href="qa-handbook/01-junior/client-server.md">🌐 Клієнт-сервер: HTTP, браузер, DevTools</a>
@@ -297,7 +41,7 @@
                 <div class="level-card middle">
                     <h3 class="level-title middle">👨‍💼 Middle</h3>
                     <p class="level-subtitle">1.5–4 роки досвіду</p>
-                    <p style="margin-bottom: 15px; color: #666; font-size: 0.95em;">Застосування технік, самостійне проєктування, автоматизація, CI/CD.</p>
+                    <p class="level-description">Застосування технік, самостійне проєктування, автоматизація, CI/CD.</p>
                     <div class="level-links">
                         <a href="qa-handbook/02-middle/istqb.md">📖 ISTQB: Застосування технік</a>
                         <a href="qa-handbook/02-middle/client-server.md">🔐 Клієнт-сервер: Auth, кешування, CORS, БД</a>
@@ -309,7 +53,7 @@
                 <div class="level-card senior">
                     <h3 class="level-title senior">👨‍🎓 Senior</h3>
                     <p class="level-subtitle">4+ років досвіду</p>
-                    <p style="margin-bottom: 15px; color: #666; font-size: 0.95em;">Стратегія, управління, архітектурне мислення, менторство.</p>
+                    <p class="level-description">Стратегія, управління, архітектурне мислення, менторство.</p>
                     <div class="level-links">
                         <a href="qa-handbook/03-senior/istqb.md">📖 ISTQB: Стратегія й управління</a>
                         <a href="qa-handbook/03-senior/client-server.md">🏗️ Клієнт-сервер: Розподілені системи</a>
@@ -325,7 +69,7 @@
                     <li><strong>Йдіть за рівнем:</strong> Спершу закрийте Junior повністю, потім переходьте до Middle. Senior читайте, коли вже маєте практичного досвіду.</li>
                     <li><strong>Чотири файли на рівень:</strong> Кожен рівень містить ISTQB-теорію, клієнт-серверну архітектуру, API testing і питання для співбесіди.</li>
                     <li><strong>Вправи & практика:</strong> Після кожного файлу виконайте практичні завдання на публічних API чи власному застосунку.</li>
-                    <li><strong>Незнайомі терміни?</strong> Дивіться в <a href="qa-handbook/glossary.md" style="color: #667eea; text-decoration: none; border-bottom: 2px solid #667eea;">глосарії</a>.</li>
+                    <li><strong>Незнайомі терміни?</strong> Дивіться в <a href="qa-handbook/glossary.md">глосарії</a>.</li>
                 </ol>
             </div>
             
@@ -369,9 +113,9 @@
                 </table>
             </div>
             
-            <div style="background: #e7f3ff; border-left: 4px solid #667eea; padding: 20px; border-radius: 5px; margin: 30px 0;">
-                <h3 style="color: #667eea; margin-bottom: 10px;">⏱️ Орієнтовний шлях навчання</h3>
-                <ul style="list-style: none; padding: 0;">
+            <div class="learning-path">
+                <h3>⏱️ Орієнтовний шлях навчання</h3>
+                <ul>
                     <li><strong>Тижні 1–4 (Junior):</strong> ISTQB розділи 1–6, HTTP, Postman. Мета: скласти CTFL-рівень знань і протестувати публічний API.</li>
                     <li><strong>Тижні 5–12 (Middle):</strong> техніки на прикладах, автотести API, Playwright/Cypress, SQL, CI.</li>
                     <li><strong>Далі (Senior):</strong> стратегія, метрики, архітектурне мислення, менторство.</li>
@@ -384,10 +128,10 @@
                 <a href="https://github.com/kviatkovska/QAhandbook">🐙 GitHub репозиторій</a>
                 <a href="https://github.com/kviatkovska/QAhandbook/issues">💬 Запитання & обговорення</a>
             </div>
-        </div>
+        </main>
         
         <footer>
-            <p>QA Handbook • Неофіційний навчальний матеріал • <a href="https://github.com/kviatkovska/QAhandbook" style="color: #667eea; text-decoration: none;">GitHub</a></p>
+            <p>QA Handbook • Неофіційний навчальний матеріал • <a href="https://github.com/kviatkovska/QAhandbook">GitHub</a></p>
         </footer>
     </div>
 </body>
