@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@playwright/test": "^1.63.0",
     "cypress": "^16.1.1"
   }
 }
