@@ -1,0 +1,139 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "level": ["junior", "middle", "senior"],
+      "category": "istqb",
+      "language": ["python", "javascript", "java", "csharp"],
+      "tools": ["selenium", "cypress", "postman", "rest-assured"],
+      "experience": ["0-1", "1-2", "2-4", "4+"],
+      "text": "Поясніть різницю між позитивним і негативним тестуванням. Наведіть приклад для кожного випадку."
+    },
+    {
+      "id": 2,
+      "level": ["junior", "middle"],
+      "category": "istqb",
+      "language": ["python", "javascript", "java", "csharp"],
+      "tools": ["selenium", "cypress"],
+      "experience": ["0-1", "1-2"],
+      "text": "Що таке тестова піраміда? Чому вона важлива для автоматизації?"
+    },
+    {
+      "id": 3,
+      "level": ["middle", "senior"],
+      "category": "istqb",
+      "language": ["python", "javascript", "java"],
+      "tools": ["jenkins", "gitlab-ci", "github-actions"],
+      "experience": ["1-2", "2-4", "4+"],
+      "text": "Як ви визначаєте стратегію регресійного тестування? Назвіть кроки вибору тест-кейсів."
+    },
+    {
+      "id": 4,
+      "level": ["senior"],
+      "category": "istqb",
+      "language": ["python", "javascript", "java", "csharp"],
+      "tools": ["jenkins", "gitlab-ci", "github-actions"],
+      "experience": ["4+"],
+      "text": "Розробіть оцінку ризиків для веб-додатку, заснованого на вимогах та типах користувачів."
+    },
+    {
+      "id": 5,
+      "level": ["junior"],
+      "category": "api",
+      "language": ["python", "javascript", "java", "csharp"],
+      "tools": ["postman", "rest-assured", "axios"],
+      "experience": ["0-1", "1-2"],
+      "text": "Напишіть curl-команду для POST запиту на API з JSON тілом і заголовками Content-Type та Authorization."
+    },
+    {
+      "id": 6,
+      "level": ["middle"],
+      "category": "api",
+      "language": ["python", "javascript", "java"],
+      "tools": ["rest-assured", "pytest", "jest", "mocha"],
+      "experience": ["1-2", "2-4"],
+      "text": "Напишіть параметризований тест API для перевірки статус-кодів 200, 400, 404 і 500 на одному endpoint."
+    },
+    {
+      "id": 7,
+      "level": ["middle", "senior"],
+      "category": "api",
+      "language": ["python", "javascript", "java"],
+      "tools": ["rest-assured", "pact", "spring-cloud-contract"],
+      "experience": ["2-4", "4+"],
+      "text": "Поясніть Contract Testing. Як він відрізняється від E2E тестування API?"
+    },
+    {
+      "id": 8,
+      "level": ["senior"],
+      "category": "api",
+      "language": ["python", "javascript", "java", "go"],
+      "tools": ["rest-assured", "gatling", "k6"],
+      "experience": ["4+"],
+      "text": "Розробіть план Performance Testing для критичного API endpoint. Які метрики вимірюватимете?"
+    },
+    {
+      "id": 9,
+      "level": ["junior"],
+      "category": "client-server",
+      "language": ["python", "javascript", "java", "csharp"],
+      "tools": ["devtools", "postman"],
+      "experience": ["0-1", "1-2"],
+      "text": "Як за допомогою браузерних Developer Tools знайти HTTP запит і перевірити заголовки відповіді?"
+    },
+    {
+      "id": 10,
+      "level": ["middle"],
+      "category": "client-server",
+      "language": ["python", "javascript", "java"],
+      "tools": ["devtools", "burp-suite", "postman"],
+      "experience": ["1-2", "2-4"],
+      "text": "Пояніть CORS і як його налаштування впливає на тестування веб-додатків. Наведіть приклад помилки."
+    },
+    {
+      "id": 11,
+      "level": ["middle", "senior"],
+      "category": "client-server",
+      "language": ["python", "javascript", "java", "go"],
+      "tools": ["burp-suite", "wireshark", "charles-proxy"],
+      "experience": ["2-4", "4+"],
+      "text": "Як ви тестуватимете аутентифікацію з JWT токенами? Які сценарії потрібно перевірити?"
+    },
+    {
+      "id": 12,
+      "level": ["senior"],
+      "category": "client-server",
+      "language": ["python", "javascript", "java", "go"],
+      "tools": ["burp-suite", "owasp-zap", "nessus"],
+      "experience": ["4+"],
+      "text": "Розробіть чек-лист для Security Testing розподіленого додатку. Які вразливості найважливіші?"
+    },
+    {
+      "id": 13,
+      "level": ["junior"],
+      "category": "istqb",
+      "language": ["python", "javascript", "java", "csharp"],
+      "tools": ["selenium", "cypress"],
+      "experience": ["0-1"],
+      "text": "Що таке Boundary Value Analysis (BVA)? Напишіть тест-кейси для функції перевірки віку (18-65 років)."
+    },
+    {
+      "id": 14,
+      "level": ["middle"],
+      "category": "api",
+      "language": ["python", "javascript"],
+      "tools": ["pytest", "jest", "mock-server"],
+      "experience": ["1-2", "2-4"],
+      "text": "Як ви використовуватимете мок-сервери при розробці паралельно з backend? Назвіть два сценарії."
+    },
+    {
+      "id": 15,
+      "level": ["senior"],
+      "category": "client-server",
+      "language": ["python", "java", "go"],
+      "tools": ["kubernetes", "docker", "docker-compose"],
+      "experience": ["4+"],
+      "text": "Як ви тестуватимете додаток в контейнеризованому оточенні? Які аспекти додаються до тестування?"
+    }
+  ]
+}
