@@ -1,0 +1,274 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "level": "Junior",
+      "section": "ISTQB",
+      "language": "All",
+      "tool": "All",
+      "experience": "All",
+      "text": "Що таке тестування чорної скриньки? Наведіть приклад."
+    },
+    {
+      "id": 2,
+      "level": "Junior",
+      "section": "ISTQB",
+      "language": "All",
+      "tool": "All",
+      "experience": "All",
+      "text": "Які основні типи тестування ви знаєте? Дайте коротке визначення кожного."
+    },
+    {
+      "id": 3,
+      "level": "Junior",
+      "section": "ISTQB",
+      "language": "All",
+      "tool": "All",
+      "experience": "All",
+      "text": "В чому різниця між багом, дефектом і відмовою?"
+    },
+    {
+      "id": 4,
+      "level": "Junior",
+      "section": "ISTQB",
+      "language": "All",
+      "tool": "All",
+      "experience": "All",
+      "text": "Що таке регресійне тестування? Коли його використовують?"
+    },
+    {
+      "id": 5,
+      "level": "Junior",
+      "section": "Client-Server",
+      "language": "All",
+      "tool": "All",
+      "experience": "All",
+      "text": "Пояснить, як працює HTTP запит-відповідь. Яких основних кроків?"
+    },
+    {
+      "id": 6,
+      "level": "Junior",
+      "section": "Client-Server",
+      "language": "All",
+      "tool": "All",
+      "experience": "All",
+      "text": "Що таке HTTP статус-коди? Наведіть приклади 2xx, 4xx, 5xx."
+    },
+    {
+      "id": 7,
+      "level": "Junior",
+      "section": "Client-Server",
+      "language": "All",
+      "tool": "Postman",
+      "experience": "All",
+      "text": "Як відправити GET запит у Postman? Опишіть кроки."
+    },
+    {
+      "id": 8,
+      "level": "Junior",
+      "section": "Client-Server",
+      "language": "All",
+      "tool": "All",
+      "experience": "All",
+      "text": "Що таке заголовок HTTP? Назвіть кілька важливих заголовків."
+    },
+    {
+      "id": 9,
+      "level": "Junior",
+      "section": "API",
+      "language": "All",
+      "tool": "Postman",
+      "experience": "All",
+      "text": "Що таке REST API? Яких HTTP методів використовуються в REST?"
+    },
+    {
+      "id": 10,
+      "level": "Junior",
+      "section": "API",
+      "language": "All",
+      "tool": "Postman",
+      "experience": "All",
+      "text": "Як тестувати JSON відповідь у Postman? Напишіть просту перевірку."
+    },
+    {
+      "id": 11,
+      "level": "Junior",
+      "section": "API",
+      "language": "All",
+      "tool": "All",
+      "experience": "All",
+      "text": "Що таке API endpoint? Наведіть приклад REST endpoint."
+    },
+    {
+      "id": 12,
+      "level": "Middle",
+      "section": "ISTQB",
+      "language": "All",
+      "tool": "All",
+      "experience": "All",
+      "text": "Опишіть техніку граничного аналізу (Boundary Value Analysis). На якому прикладі ви б її використали?"
+    },
+    {
+      "id": 13,
+      "level": "Middle",
+      "section": "ISTQB",
+      "language": "All",
+      "tool": "All",
+      "experience": "All",
+      "text": "Що таке ризик-орієнтоване тестування? Як воно впливає на план тестування?"
+    },
+    {
+      "id": 14,
+      "level": "Middle",
+      "section": "ISTQB",
+      "language": "All",
+      "tool": "All",
+      "experience": "All",
+      "text": "Як розраховується покриття тестами (code coverage)? Яке покриття вважається добрим?"
+    },
+    {
+      "id": 15,
+      "level": "Middle",
+      "section": "ISTQB",
+      "language": "All",
+      "tool": "All",
+      "experience": "All",
+      "text": "Опишіть техніку еквівалентного розбиття (Equivalence Partitioning)."
+    },
+    {
+      "id": 16,
+      "level": "Middle",
+      "section": "Client-Server",
+      "language": "All",
+      "tool": "All",
+      "experience": "All",
+      "text": "Пояснить, як працює автентифікація за допомогою токенів JWT. Яких основних частин у JWT?"
+    },
+    {
+      "id": 17,
+      "level": "Middle",
+      "section": "Client-Server",
+      "language": "All",
+      "tool": "All",
+      "experience": "All",
+      "text": "Що таке CORS? Як тестувати CORS помилки?"
+    },
+    {
+      "id": 18,
+      "level": "Middle",
+      "section": "Client-Server",
+      "language": "All",
+      "tool": "All",
+      "experience": "All",
+      "text": "Що таке кешування у веб-додатках? Які типи кешування існують?"
+    },
+    {
+      "id": 19,
+      "level": "Middle",
+      "section": "Client-Server",
+      "language": "All",
+      "tool": "All",
+      "experience": "All",
+      "text": "Як передавати параметри у URL запиту? Яка різниця між path param і query param?"
+    },
+    {
+      "id": 20,
+      "level": "Middle",
+      "section": "API",
+      "language": "JavaScript",
+      "tool": "Cypress",
+      "experience": "2–4",
+      "text": "Як написати тест для перевірки API відповіді у Cypress? Напишіть простий приклад."
+    },
+    {
+      "id": 21,
+      "level": "Middle",
+      "section": "API",
+      "language": "JavaScript",
+      "tool": "Playwright",
+      "experience": "2–4",
+      "text": "Як в Playwright перехопити та перевірити мережеві запити? Напишіть приклад."
+    },
+    {
+      "id": 22,
+      "level": "Middle",
+      "section": "API",
+      "language": "Python",
+      "tool": "Pytest",
+      "experience": "1–2",
+      "text": "Як написати параметризований тест у Pytest для тестування API з різними вхідними даними?"
+    },
+    {
+      "id": 23,
+      "level": "Middle",
+      "section": "API",
+      "language": "Java",
+      "tool": "REST Assured",
+      "experience": "All",
+      "text": "Як перевірити JSON схему відповіді у REST Assured? Напишіть приклад."
+    },
+    {
+      "id": 24,
+      "level": "Middle",
+      "section": "API",
+      "language": "JavaScript",
+      "tool": "Jest",
+      "experience": "1–2",
+      "text": "Як написати unit тест для API викликаної функції у Jest?"
+    },
+    {
+      "id": 25,
+      "level": "Senior",
+      "section": "ISTQB",
+      "language": "All",
+      "tool": "All",
+      "experience": "4+",
+      "text": "Як розробити стратегію тестування для великого проекту? Які ключові елементи стратегії?"
+    },
+    {
+      "id": 26,
+      "level": "Senior",
+      "section": "ISTQB",
+      "language": "All",
+      "tool": "All",
+      "experience": "4+",
+      "text": "Як вимірювати ефективність тестування? Які метрики ви б розглядали?"
+    },
+    {
+      "id": 27,
+      "level": "Senior",
+      "section": "ISTQB",
+      "language": "All",
+      "tool": "All",
+      "experience": "4+",
+      "text": "Як управляти командою QA? Які ключові навички лідера тестування?"
+    },
+    {
+      "id": 28,
+      "level": "Senior",
+      "section": "Client-Server",
+      "language": "All",
+      "tool": "All",
+      "experience": "4+",
+      "text": "Як проектувати й тестувати розподілені системи? Які основні ризики?"
+    },
+    {
+      "id": 29,
+      "level": "Senior",
+      "section": "Client-Server",
+      "language": "All",
+      "tool": "All",
+      "experience": "4+",
+      "text": "Як організувати моніторинг та логування у production? Яку інформацію варто логувати?"
+    },
+    {
+      "id": 30,
+      "level": "Senior",
+      "section": "API",
+      "language": "All",
+      "tool": "All",
+      "experience": "4+",
+      "text": "Що таке контрактне тестування? Як воно відрізняється від функціонального API тестування?"
+    }
+  ]
+}
