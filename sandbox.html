@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Handbook — Sandbox</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="sandbox.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧪 Sandbox</h1>
+            <p>Генерація практичних запитань для QA</p>
+        </header>
+
+        <main class="sandbox-page">
+            <div class="sandbox-box">
+                <form id="sandbox-form" class="sandbox-form">
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="level">Рівень</label>
+                            <select id="level" data-testid="level">
+                                <option value="Junior">Junior</option>
+                                <option value="Middle">Middle</option>
+                                <option value="Senior">Senior</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="section">Розділ</label>
+                            <select id="section" data-testid="section">
+                                <option value="ISTQB">ISTQB</option>
+                                <option value="API">API</option>
+                                <option value="Client-Server">Client-Server</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="language">Мова</label>
+                            <select id="language" data-testid="language">
+                                <option value="All">All</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="Python">Python</option>
+                                <option value="Java">Java</option>
+                                <option value="C#">C#</option>
+                                <option value="Go">Go</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="tool">Інструмент</label>
+                            <select id="tool" data-testid="tool">
+                                <option value="All">All</option>
+                                <option value="Postman">Postman</option>
+                                <option value="Cypress">Cypress</option>
+                                <option value="Playwright">Playwright</option>
+                                <option value="Selenium">Selenium</option>
+                                <option value="Pytest">Pytest</option>
+                                <option value="Jest">Jest</option>
+                                <option value="REST Assured">REST Assured</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="experience">Досвід (роки)</label>
+                            <select id="experience" data-testid="experience">
+                                <option value="All">All</option>
+                                <option value="0–1">0–1</option>
+                                <option value="1–2">1–2</option>
+                                <option value="2–4">2–4</option>
+                                <option value="4+">4+</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="button" id="generate-question" data-testid="generate-question">
+                        🎲 Згенерувати питання
+                    </button>
+                </form>
+
+                <div class="question-block" id="question-block" hidden>
+                    <h3>📝 Питання</h3>
+                    <p id="generated-question" data-testid="generated-question"></p>
+
+                    <label for="answer" class="answer-label">Ваша відповідь</label>
+                    <textarea
+                        id="answer"
+                        rows="8"
+                        placeholder="Напишіть вашу відповідь тут..."
+                        data-testid="answer"
+                    ></textarea>
+                </div>
+
+                <div id="empty-state" class="empty-state" hidden>
+                    ⚠️ Немає питань за такими критеріями. Спробуйте змінити фільтри.
+                </div>
+            </div>
+
+            <div class="sandbox-footer">
+                <a href="index.html" class="link-back">← Повернутися на головну</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>QA Handbook • Sandbox — місце для практики • © <span id="current-year">2026</span></p>
+        </footer>
+    </div>
+</body>
+</html>
