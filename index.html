@@ -3,146 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QA Handbook - Навчальний довідник для тестувальників</title>
+    <title>QA Handbook</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="assets/js/script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>📚 QA Handbook</h1>
-            <p>Навчальний довідник для тестувальників</p>
-        </header>
-
-        <main>
-            <div class="intro">
-                <h2>Що це?</h2>
-                <p>Неофіційний конспект із теорії тестування за структурою <strong>ISTQB Foundation (CTFL v4.0)</strong>, клієнт-серверної архітектури, API testing та підготовки до協бесід. Проєкт не пов'язаний з ISTQB®.</p>
-            </div>
-
-            <div class="warning">
-                <strong>⚠️ Застереження:</strong> Це неофіційні конспекти, написані власними словами. Проєкт не пов'язаний з ISTQB®. ISTQB® є зареєстрованою торговельною маркою.
-            </div>
-
-            <h2>Виберіть ваш рівень</h2>
-
-            <div class="levels-grid">
-                <div class="level-card junior" tabindex="0">
-                    <h3 class="level-title junior">👶 Junior</h3>
-                    <p class="level-subtitle">0–1.5 року досвіду</p>
-                    <p class="level-description">Розуміння термінів, основи тестування, перші кроки з автоматизацією API.</p>
-                    <div class="level-links">
-                        <a href="pages/junior.html">📖 ISTQB: Основи й терміни</a>
-                        <a href="qa-handbook/01-junior/client-server.md">🌐 Клієнт-сервер: HTTP, браузер, DevTools</a>
-                        <a href="qa-handbook/01-junior/api-testing.md">🔌 API Testing: Перші API-тести</a>
-                        <a href="qa-handbook/01-junior/interview.md">💬 Співбесіда: Типові питання</a>
-                    </div>
-                </div>
-
-                <div class="level-card middle" tabindex="0">
-                    <h3 class="level-title middle">👨‍💼 Middle</h3>
-                    <p class="level-subtitle">1.5–4 роки досвіду</p>
-                    <p class="level-description">Застосування технік, самостійне проєктування, автоматизація, CI/CD.</p>
-                    <div class="level-links">
-                        <a href="pages/middle.html">📖 ISTQB: Застосування технік</a>
-                        <a href="qa-handbook/02-middle/client-server.md">🔐 Клієнт-сервер: Auth, кешування, CORS, БД</a>
-                        <a href="qa-handbook/02-middle/api-testing.md">⚙️ API Testing: Автоматизація API</a>
-                        <a href="qa-handbook/02-middle/interview.md">💬 Співбесіда: Архітектура & розробка</a>
-                    </div>
-                </div>
-
-                <div class="level-card senior" tabindex="0">
-                    <h3 class="level-title senior">👨‍🎓 Senior</h3>
-                    <p class="level-subtitle">4+ років досвіду</p>
-                    <p class="level-description">Стратегія, управління, архітектурне мислення, менторство.</p>
-                    <div class="level-links">
-                        <a href="pages/senior.html">📖 ISTQB: Стратегія й управління</a>
-                        <a href="qa-handbook/03-senior/client-server.md">🏗️ Клієнт-сервер: Розподілені системи</a>
-                        <a href="qa-handbook/03-senior/api-testing.md">🛡️ API Testing: Контракти, безпека, performance</a>
-                        <a href="qa-handbook/03-senior/interview.md">💬 Співбесіда: Лідерство & стратегія</a>
-                    </div>
-                </div>
-
-                <div class="level-card sandbox" tabindex="0">
-                    <h3 class="level-title sandbox">🧪 Sandbox</h3>
-                    <p class="level-subtitle">Практика для тренування</p>
-                    <p class="level-description">Генеруємо випадкові запитання на основі обраних рівня, розділу, мови та інструменту.</p>
-                    <div class="level-links">
-                        <a href="pages/sandbox.html">🚀 Відкрити Sandbox</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="how-to-use">
-                <h2>📝 Як користуватися</h2>
-                <ol>
-                    <li><strong>Йдіть за рівнем:</strong> спершу закрийте Junior повністю, потім переходьте до Middle. Senior читайте, коли вже маєте практичний досвід.</li>
-                    <li><strong>Чотири файли на рівень:</strong> кожен рівень містить ISTQB-теорію, клієнт-серверну архітектуру, API testing і питання для협бесіди.</li>
-                    <li><strong>Вправи & практика:</strong> після кожного файлу виконайте практичні завдання на публічних API чи власному застосунку.</li>
-                    <li><strong>Незнайомі терміни?</strong> дивіться в <a href="qa-handbook/glossary.md">глосарії</a>.</li>
-                </ol>
-            </div>
-
-            <div class="what-to-expect">
-                <h2>🎯 Що очікується на кожному рівні</h2>
-                <table class="expectations-table">
-                    <thead>
-                        <tr>
-                            <th>Аспект</th>
-                            <th>Junior</th>
-                            <th>Middle</th>
-                            <th>Senior</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Фокус</strong></td>
-                            <td>Розуміти терміни & виконувати завдання</td>
-                            <td>Самостійно проєктувати тести & автоматизувати</td>
-                            <td>Визначати стратегію & менторити інших</td>
-                        </tr>
-                        <tr>
-                            <td><strong>ISTQB</strong></td>
-                            <td>Розділи 1–6 на рівні розуміння</td>
-                            <td>Уміння застосовувати техніки, ризик-орієнтоване тестування, метрики</td>
-                            <td>Стратегія, управління проєктом, облік ризиків</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Клієнт-сервер</strong></td>
-                            <td>Запит/відповідь, HTTP, DevTools</td>
-                            <td>Auth, кеші, CORS, черги, діагностика по шарах</td>
-                            <td>Архітектурні ризики, вибір технологій</td>
-                        </tr>
-                        <tr>
-                            <td><strong>API</strong></td>
-                            <td>Ручні перевірки в Postman/curl</td>
-                            <td>Автотести, схеми, моки, CI</td>
-                            <td>Contract testing, безпека, performance, стратегія</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="learning-path">
-                <h3>⏱️ Орієнтовний шлях навчання</h3>
-                <ul>
-                    <li><strong>Тижні 1–4 (Junior):</strong> ISTQB розділи 1–6, HTTP, Postman. Мета: скласти CTFL-рівень знань і протестувати публічний API.</li>
-                    <li><strong>Тижні 5–12 (Middle):</strong> техніки на прикладах, автотести API, Playwright/Cypress, SQL, CI.</li>
-                    <li><strong>Далі (Senior):</strong> стратегія, метрики, архітектурне мислення, менторство.</li>
-                </ul>
-            </div>
-
-            <div class="additional-links">
-                <h3>🔗 Додаткові ресурси</h3>
-                <a href="qa-handbook/glossary.md">📚 Глосарій термінів</a>
-                <a href="https://github.com/kviatkovska/QAhandbook">🐙 GitHub репозиторій</a>
-                <a href="https://github.com/kviatkovska/QAhandbook/issues">💬 Запитання & обговорення</a>
-            </div>
-        </main>
-
-        <footer>
-            <p>QA Handbook • Неофіційний навчальний матеріал • © <span id="current-year">2026</span> • <a href="https://github.com/kviatkovska/QAhandbook">GitHub</a></p>
-        </footer>
+    <div class="topbar">
+        <a class="brand" href="index.html">📚 QA Handbook</a>
+        <nav>
+            <a href="pages/junior.html">Junior</a>
+            <a href="pages/middle.html">Middle</a>
+            <a href="pages/senior.html">Senior</a>
+            <a href="pages/sandbox.html">Sandbox</a>
+            <a href="pages/glossary.html">Глосарій</a>
+            <a href="https://github.com/kviatkovska/QAhandbook">GitHub</a>
+        </nav>
     </div>
+
+    <main class="container">
+        <section class="hero">
+            <h1>QA Handbook</h1>
+            <p>Навчальний довідник для тестувальників: ISTQB Foundation (CTFL v4.0), клієнт-серверна архітектура, API testing і підготовка до співбесід.</p>
+        </section>
+
+        <div class="notice">Неофіційні конспекти, написані власними словами. Проєкт не пов'язаний з ISTQB®, яке є зареєстрованою торговою маркою.</div>
+
+        <div class="cards">
+            <a class="card junior" href="pages/junior.html">
+                <h2>👶 Junior</h2>
+                <div class="sub">0–1.5 року досвіду</div>
+                <p>Терміни, HTTP, DevTools, перші API-тести в Postman.</p>
+            </a>
+            <a class="card middle" href="pages/middle.html">
+                <h2>👨‍💼 Middle</h2>
+                <div class="sub">1.5–4 роки досвіду</div>
+                <p>Техніки тест-дизайну, auth, кешування, автоматизація API, CI.</p>
+            </a>
+            <a class="card senior" href="pages/senior.html">
+                <h2>👨‍🎓 Senior</h2>
+                <div class="sub">4+ років досвіду</div>
+                <p>Стратегія, розподілені системи, контракти, безпека, performance.</p>
+            </a>
+            <a class="card sandbox" href="pages/sandbox.html">
+                <h2>🧪 Sandbox</h2>
+                <div class="sub">Практика</div>
+                <p>Генерація питань за рівнем, розділом, мовою, інструментом і досвідом.</p>
+            </a>
+        </div>
+
+        <h2 class="section">Що очікується на кожному рівні</h2>
+        <table>
+            <thead><tr><th></th><th>Junior</th><th>Middle</th><th>Senior</th></tr></thead>
+            <tbody>
+                <tr><td><strong>Фокус</strong></td><td>Розуміти терміни й виконувати завдання</td><td>Самостійно проєктувати тести й автоматизувати</td><td>Визначати підхід, ризики, якість процесу</td></tr>
+                <tr><td><strong>ISTQB</strong></td><td>Розділи 1–6 на рівні розуміння</td><td>Техніки, ризик-орієнтоване тестування, метрики</td><td>Test strategy, покращення процесу, ROI автоматизації</td></tr>
+                <tr><td><strong>Клієнт-сервер</strong></td><td>Запит/відповідь, HTTP, DevTools</td><td>Auth, кеші, CORS, черги, діагностика по шарах</td><td>Архітектурні ризики, відмовостійкість, observability</td></tr>
+                <tr><td><strong>API</strong></td><td>Ручні перевірки в Postman/curl</td><td>Автотести, схеми, моки, CI</td><td>Contract testing, безпека, performance, стратегія</td></tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>QA Handbook • © <span id="current-year"></span></footer>
+    <script src="assets/js/script.js" defer></script>
 </body>
 </html>

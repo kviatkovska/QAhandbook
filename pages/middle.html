@@ -3,70 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QA Handbook — Middle Рівень</title>
+    <title>QA Handbook — Middle</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
+    <script src="../assets/js/level.js" defer></script>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>👨‍💼 Middle Рівень</h1>
-            <p>1.5–4 роки досвіду • Застосування технік та автоматизація</p>
-        </header>
-
-        <main class="level-page">
-            <div class="breadcrumb">
-                <a href="../index.html">Головна</a> → Middle
-            </div>
-
-            <div class="level-nav">
-                <h3>🎯 Розділи Middle</h3>
-                <div class="nav-links">
-                    <a href="#istqb" class="active">📖 ISTQB</a>
-                    <a href="#client-server">🌐 Client-Server</a>
-                    <a href="#api">🔌 API Testing</a>
-                    <a href="#interview">💬 协бесіда</a>
-                </div>
-            </div>
-
-            <div class="level-content">
-                <h2 id="istqb">📖 ISTQB: Застосування технік</h2>
-                <p>Глибше вивчення технік тестування, методів аналізу граничних значень, еквівалентного розбиття та інших техніх.</p>
-                <p><strong>Файл:</strong> <code>qa-handbook/02-middle/istqb.md</code></p>
-                <p><a href="../qa-handbook/02-middle/istqb.md" target="_blank">📂 Відкрити матеріал</a></p>
-            </div>
-
-            <div class="level-content">
-                <h2 id="client-server">🌐 Client-Server: Auth, кешування, CORS, БД</h2>
-                <p>Розуміння автентифікації, авторизації, кешування, CORS, взаємодії з базами даних та більш складних архітектурних концепцій.</p>
-                <p><strong>Файл:</strong> <code>qa-handbook/02-middle/client-server.md</code></p>
-                <p><a href="../qa-handbook/02-middle/client-server.md" target="_blank">📂 Відкрити матеріал</a></p>
-            </div>
-
-            <div class="level-content">
-                <h2 id="api">🔌 API Testing: Автоматизація API</h2>
-                <p>Написання автотестів для API з Cypress, Playwright, або інших фреймворків, вивчення схем, моків та CI/CD.</p>
-                <p><strong>Файл:</strong> <code>qa-handbook/02-middle/api-testing.md</code></p>
-                <p><a href="../qa-handbook/02-middle/api-testing.md" target="_blank">📂 Відкрити матеріал</a></p>
-            </div>
-
-            <div class="level-content">
-                <h2 id="interview">💬 协бесіда: Архітектура & розробка</h2>
-                <p>Підготовка до вакансій Middle рівня, питання про архітектуру, мислення та розуміння систем.</p>
-                <p><strong>Файл:</strong> <code>qa-handbook/02-middle/interview.md</code></p>
-                <p><a href="../qa-handbook/02-middle/interview.md" target="_blank">📂 Відкрити матеріал</a></p>
-            </div>
-
-            <div class="level-nav" style="margin-top: 30px;">
-                <a href="../index.html" class="link-back">← Повернутися на головну</a>
-            </div>
-        </main>
-
-        <footer>
-            <p>QA Handbook • Middle Рівень • © <span id="current-year">2026</span></p>
-        </footer>
+<body data-level="middle">
+    <div class="topbar">
+        <a class="brand" href="../index.html">📚 QA Handbook</a>
+        <nav>
+            <a href="junior.html">Junior</a>
+            <a href="middle.html" class="active">Middle</a>
+            <a href="senior.html">Senior</a>
+            <a href="sandbox.html">Sandbox</a>
+            <a href="glossary.html">Глосарій</a>
+        </nav>
     </div>
-    <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+    <main class="container">
+        <div class="breadcrumb"><a href="../index.html">Головна</a> / Middle</div>
+        <h1 id="page-title">Middle</h1>
+        <p class="hero-sub" style="color:var(--muted);margin:0">1.5–4 роки досвіду • застосування технік та автоматизація</p>
+        <div class="tabs" id="tabs" role="tablist"></div>
+        <article class="markdown-body" id="content" data-testid="content">Завантаження…</article>
+    </main>
+    <footer>QA Handbook • Middle • © <span id="current-year"></span></footer>
 </body>
 </html>

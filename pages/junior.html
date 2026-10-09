@@ -3,70 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QA Handbook — Junior Рівень</title>
+    <title>QA Handbook — Junior</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
+    <script src="../assets/js/level.js" defer></script>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>👶 Junior Рівень</h1>
-            <p>0–1.5 року досвіду • Основи та перші кроки</p>
-        </header>
-
-        <main class="level-page">
-            <div class="breadcrumb">
-                <a href="../index.html">Головна</a> → Junior
-            </div>
-
-            <div class="level-nav">
-                <h3>🎯 Розділи Junior</h3>
-                <div class="nav-links">
-                    <a href="#istqb" class="active">📖 ISTQB</a>
-                    <a href="#client-server">🌐 Client-Server</a>
-                    <a href="#api">🔌 API Testing</a>
-                    <a href="#interview">💬 Співбесіда</a>
-                </div>
-            </div>
-
-            <div class="level-content">
-                <h2 id="istqb">📖 ISTQB: Основи й терміни</h2>
-                <p>Вивчайте основні поняття тестування, типи тестування, термінологію та принципи ISTQB Foundation.</p>
-                <p><strong>Файл:</strong> <code>qa-handbook/01-junior/istqb.md</code></p>
-                <p><a href="../qa-handbook/01-junior/istqb.md" target="_blank">📂 Відкрити матеріал</a></p>
-            </div>
-
-            <div class="level-content">
-                <h2 id="client-server">🌐 Client-Server: HTTP, браузер, DevTools</h2>
-                <p>Розуміння того, як працюють HTTP запити, браузер, DevTools, та основи клієнт-серверної архітектури.</p>
-                <p><strong>Файл:</strong> <code>qa-handbook/01-junior/client-server.md</code></p>
-                <p><a href="../qa-handbook/01-junior/client-server.md" target="_blank">📂 Відкрити матеріал</a></p>
-            </div>
-
-            <div class="level-content">
-                <h2 id="api">🔌 API Testing: Перші API-тести</h2>
-                <p>Введення в API тестування, використання Postman, простих перевірок та руч запитів.</p>
-                <p><strong>Файл:</strong> <code>qa-handbook/01-junior/api-testing.md</code></p>
-                <p><a href="../qa-handbook/01-junior/api-testing.md" target="_blank">📂 Відкрити матеріал</a></p>
-            </div>
-
-            <div class="level-content">
-                <h2 id="interview">💬 협бесіда: Типові питання</h2>
-                <p>Підготовка до вакансій Junior рівня, типові питання та як на них відповідати.</p>
-                <p><strong>Файл:</strong> <code>qa-handbook/01-junior/interview.md</code></p>
-                <p><a href="../qa-handbook/01-junior/interview.md" target="_blank">📂 Відкрити матеріал</a></p>
-            </div>
-
-            <div class="level-nav" style="margin-top: 30px;">
-                <a href="../index.html" class="link-back">← Повернутися на головну</a>
-            </div>
-        </main>
-
-        <footer>
-            <p>QA Handbook • Junior Рівень • © <span id="current-year">2026</span></p>
-        </footer>
+<body data-level="junior">
+    <div class="topbar">
+        <a class="brand" href="../index.html">📚 QA Handbook</a>
+        <nav>
+            <a href="junior.html" class="active">Junior</a>
+            <a href="middle.html">Middle</a>
+            <a href="senior.html">Senior</a>
+            <a href="sandbox.html">Sandbox</a>
+            <a href="glossary.html">Глосарій</a>
+        </nav>
     </div>
-    <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+    <main class="container">
+        <div class="breadcrumb"><a href="../index.html">Головна</a> / Junior</div>
+        <h1 id="page-title">Junior</h1>
+        <p class="hero-sub" style="color:var(--muted);margin:0">0–1.5 року досвіду • основи та перші кроки</p>
+        <div class="tabs" id="tabs" role="tablist"></div>
+        <article class="markdown-body" id="content" data-testid="content">Завантаження…</article>
+    </main>
+    <footer>QA Handbook • Junior • © <span id="current-year"></span></footer>
 </body>
 </html>
